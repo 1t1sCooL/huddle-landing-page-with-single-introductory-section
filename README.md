@@ -24,7 +24,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Solution URL: [Vercel](https://four-card-feature-section-xi-two.vercel.app/)
+- Solution URL: [Vercel](https://huddle-landing-page-with-single-int-bay.vercel.app/)
 - Live Site URL: [mmalabugin.ru/HuddleLandingPageWithSingleIntroductorySection/](https://mmalabugin.ru/HuddleLandingPageWithSingleIntroductorySection/)
 
 ## My process
