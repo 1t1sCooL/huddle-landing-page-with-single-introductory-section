@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: huddle-landing-page-with-single-introductory-section-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: huddle-landing-page-with-single-introductory-section-app
+  template:
+    metadata:
+      labels:
+        app: huddle-landing-page-with-single-introductory-section-app
+    spec:
+      containers:
+        - name: huddle-landing-page-with-single-introductory-section-app
+          image: huddle-landing-page-with-single-introductory-section-app:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: NODE_ENV
+              value: "production"
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10
